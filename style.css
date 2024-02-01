@@ -1,0 +1,38 @@
+header {
+  color: white;
+}
+
+h1 {
+  color: #ffcd31;
+}
+
+body { 
+  background-color:#222222; 
+  color: white;
+
+}
+
+a {
+  outline: 3px solid gold;
+}
+
+
+
+.wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 40px;
+  border: 2px solid #ffcd31;
+  padding: 25px;
+  height: 80vh;
+
+
+
+
+
+  
+}
+
+
+
