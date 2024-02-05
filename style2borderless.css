@@ -17,13 +17,12 @@ body {
 }
 
 .wrapper {
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  border-radius: 40px;
-  border: 2px solid #ffcd31;
-  padding: 25px;
-  height: 80vh;
+  padding: 30px;
+  height: auto;
+  text-align: justify;
 }
 
 a.class1 {color:white;}
@@ -45,13 +44,3 @@ iframe {
   border-width: 3px;
   color: #ffcd31;
   overflow: auto;
-
-
-
-
-
-
-
-
-
-
