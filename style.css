@@ -4,19 +4,13 @@ header {
 
 h1 {
   color: #ffcd31;
+  text-decoration: none;
 }
 
 body { 
   background-color:#222222; 
   color: white;
-
 }
-
-a {
-  outline: 3px solid gold;
-}
-
-
 
 .wrapper {
   max-width: 950px;
@@ -26,13 +20,25 @@ a {
   border: 2px solid #ffcd31;
   padding: 25px;
   height: 80vh;
-
-
-
-
-
-  
 }
+
+a.class1 {color:white;}
+a.class1:link  {text-decoration: none; color: white;}
+a.class1:visited {text-decoration: none; color: white;}
+a.class1:hover {text-decoration: underline; color: white;}
+a.class1:active {text-decoration: none; color: white;}
+
+a.class2 {color:#ffcd31;}
+a.class2:link  {text-decoration: none; color: #ffcd31;}
+a.class2:visited {text-decoration: none; color: #ffcd31;}
+a.class2:hover {text-decoration: underline; color: #ffcd31;}
+a.class2:active {text-decoration: none; color: #ffcd31;}
+
+
+
+
+
+
 
 
 
