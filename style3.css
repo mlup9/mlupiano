@@ -1,0 +1,68 @@
+header {
+  color: white;
+}
+
+h1 {
+  color: #ffcd31;
+  text-decoration: none;
+
+}
+
+body { 
+  background-color:#811e13; 
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+ 
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px;
+  height: auto;
+  text-align: justify;
+}
+
+a.class1 {color:white;}
+a.class1:link  {text-decoration: none; color: white;}
+a.class1:visited {text-decoration: none; color: white;}
+a.class1:hover {text-decoration: underline; color: white;}
+a.class1:active {text-decoration: none; color: white;}
+
+a.class2 {color:#ffcd31;}
+a.class2:link  {text-decoration: none; color: #ffcd31;}
+a.class2:visited {text-decoration: none; color: #ffcd31;}
+a.class2:hover {text-decoration: underline; color: #ffcd31;}
+a.class2:active {text-decoration: none; color: #ffcd31;}
+
+iframe {
+  height: 400px;
+  width: 600px;
+  border: solid;
+  border-width: 3px;
+  color: #ffcd31;
+  overflow: auto;
+}
+
+li{
+    margin: 25px 0;
+
+}
+
+input[type=text] {
+  border: 2px solid yellow;
+  border-radius: 4px;
+  outline: none;
+  background-color: green;
+
+}
+
+input, select, textarea {
+color: white;
+}
+
+span {
+  color: yellow;
+}
