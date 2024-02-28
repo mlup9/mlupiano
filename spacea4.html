@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>SPACE</title>
+</head>
+<body bgcolor="black" >
+
+
+<div style="text-align:center">
+<canvas id="space" width="1200" height="600"; tabindex="1";></canvas>
+
+<script type="application/javascript">
+var background = new Image();
+var imgTag = new Image();
+var canvas = document.getElementById('space');
+var ctx = canvas.getContext("2d");
+var x = canvas.width;
+var y = canvas.height;
+
+background.src = "space.png";
+imgTag.onload = animate;
+imgTag.src = "ship.png";
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(background, 0, 0, 1200,600);                       
+
+  
+  x -= 4;
+  if (x > -125){
+  requestAnimationFrame(animate);       
+}
+
+  ctx.drawImage(imgTag, x, y-400, 152,154);                     
+  if(x == -124){   
+  x = canvas.width;
+  }
+}
+canvas.addEventListener('keydown', function(event) { if (event.keyCode == 83)
+y += 50;
+});
+canvas.addEventListener('keydown', function(event) { if (event.keyCode == 87)
+y -= 50;
+});
+canvas.addEventListener('keydown', function(event) { if (event.keyCode == 68)
+x -= 50;
+});
+
+
+
+</script>
+
+<div style="text-align: center;">
+<font color="white"; font size="6"> Click Space to Begin <br> W=Up <br> S=Down</font>
+</div>
+
+</body>
+</html>
+
+
