@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fetch Demo</title>
+</head>
+<body>
+
+	<div id="output"></div>
+
+
+	<script type="text/javascript">
+		// API endpoints
+const apiUrl1 = 'https://api.sampleapis.com/beers/ale';
+const apiUrl2 = 'https://api.sampleapis.com/presidents/presidents';
+
+// Fetch data from the first API endpoint
+fetch(apiUrl1)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data1 => {
+    // Process data from the first API
+    console.log('Data from API 1:', data1);
+    //let as = JSON.parse(data1);
+const myJSON = JSON.stringify(data1);
+  //const myJSON =  data1.toString();
+
+//const result = Object.entries(data1);
+document.getElementById("output").innerHTML = myJSON;
+
+
+    // Fetch data from the second API endpoint
+    return fetch(apiUrl2);
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data2 => {
+    // Process data from the second API
+    console.log('Data from API 2:', data2);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+
+	</script>
+
+</body>
+</html>
