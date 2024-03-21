@@ -42,7 +42,7 @@ function showQuestion(data){
     // console.log(correctAnswer);
 
 
-    _question.innerHTML = `${data.question} <br> <span class = "category"> ${data.category} </span>`;
+    _question.innerHTML = `${data.question} <br>  ${data.category} </span>`;
     _options.innerHTML = `
         ${optionsList.map((option, index) => `
             <li> ${index + 1}. <span>${option}</span> </li>
