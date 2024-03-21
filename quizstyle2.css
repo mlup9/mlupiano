@@ -40,12 +40,12 @@ body{
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    border: 5px solid var(--grey-color);
+    border: 5px solid var(--light-blue-color);
     font-weight: bold;
     width: 100px;
     height: 50px;
     margin: .5rem auto 1rem auto;
-    color: var(--light-blue-color);
+    color: black;
 }
 .quiz-question{
     font-size: 1.2rem;
@@ -61,7 +61,7 @@ body{
     padding: .2rem .4rem;
     border-radius: .2rem;
     margin-top: 0.5rem;
-    display: inline-block;
+    display: inline-block; */
 }
 .quiz-options{
     list-style-type: none;
