@@ -20,6 +20,8 @@ body{
     min-height: 100vh;
     font-family:"Lexend Giga", sans-serif;;
     background: #141414;
+
+
 }
 .wrapper{
     background: #d3d3d3;
@@ -159,3 +161,18 @@ body{
         font-size: 1rem;
     }
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+    font-size: 35px;
+    font: white;
+}
+ 
+a{
+    color: white;
+    }
