@@ -5,6 +5,17 @@ body {
    background: black;
 }
 
+.wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 40px;
+  border: 2px solid #191970;
+  padding: 25px;
+  height: 80vh;
+}
+
+
 h1 {
    display: flex;
    justify-content: center;
@@ -31,7 +42,7 @@ h1 {
 @-webkit-keyframes glow {
      from {
       color: #fff;
-    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    text-shadow: 0 0 10px #191970, 0 0 20px #191970, 0 0 30px #191970, 0 0 40px #191970, 0 0 50px #191970, 0 0 60px #191970, 0 0 70px #191970, 0 0 90px #191970;
   }
   
   to {
@@ -44,4 +55,22 @@ h2 {
    color:white;
    font-family:"Lexend Giga", sans-serif;
    text-align: center;
+}
+
+button {
+   font-family:"Lexend Giga", sans-serif;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+a {
+   text-decoration: none;
 }
