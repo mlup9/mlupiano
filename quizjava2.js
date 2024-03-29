@@ -105,7 +105,7 @@ function checkCount(){
     } else {
         setTimeout(function(){
             loadQuestion();
-        }, 300);
+        }, 4000);
     }
 }
 
